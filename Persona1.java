@@ -24,6 +24,16 @@ public class Persona1 {
         return edad >= 18;
     }
 
+    // Metodo para saber si puedes jubilarte o no y cuantos años te faltan
+    public void anosParaJubilacion() {
+        int edadJubilacion = 65;
+        if (edad >= edadJubilacion) {
+            System.out.println(nombre + " ya está en edad de jubilarse o puede jubilarse.");
+        } else {
+            System.out.println(nombre + " puede jubilarse en " + (edadJubilacion - edad) + " años.");
+        }
+    }
+
 
 
     // Ejecucion principal 1.0
